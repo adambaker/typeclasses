@@ -1,0 +1,15 @@
+{
+  "name": "MyModule",
+  "version": "0.0.1",
+  "main": "amd/MyModule.js",
+  "dependencies": {
+    "requirejs": "2.1.8"
+  },
+  "ignore": [
+    "**/.*",
+    "**/*.json",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}

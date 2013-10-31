@@ -1,0 +1,20 @@
+{
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonew": true,
+  "plusplus": true,
+  "quotmark": true,
+  "trailing": true,
+  "undef": true,
+  "unused": true,
+  "globals": { "require": false, "module": false, "describe": false, "it": false, "beforeEach": false, "context": false }
+}

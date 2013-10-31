@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - 0.10
+script:
+  - npm run-script lint
+  - npm run-script test
+  - npm run-script check-metadata
