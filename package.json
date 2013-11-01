@@ -1,31 +1,27 @@
 {
-  "name": "MyModule",
+  "name": "typeclasses",
   "version": "0.0.1",
   "description": "",
-  "main": "cjs/MyModule.js",
+  "main": "cjs/index.js",
   "scripts": {
-    "test": "mocha",
-    "lint": "jshint *.js test/*.js *.json",
-    "check-metadata": "test `underscore process 'data.version' < package.json` = `underscore process 'data.version' < bower.json`",
-    "publish": "npm publish . && git tag -a `underscore process 'data.version' < bower.json` -m 'Bump version' && bower register `underscore process 'data.name' < bower.json` `bower process 'data.repository' < package.json`"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:YOU/REPO.git"
+    "url": "git@github.com:adambaker/typeclasses.git"
   },
   "dependencies": {
-    "amdefine": "~0.0.4"
   },
   "devDependencies": {
-    "jshint": "~1.1.0",
     "mocha": "~1.9.0",
-    "sinon": "~1.7.1",
     "chai": "~1.6.0",
     "es6-module-transpiler": "~0.3.3",
-    "underscore-cli": "0.2.17"
+    "grunt": "~0.4.1",
+    "grunt-bump": "~0.0.11",
+    "grunt-mocha-test": "~0.6.3",
+    "claire": "~0.4.1"
   },
   "keywords": [
-
   ],
   "author": "",
   "license": "MIT"
