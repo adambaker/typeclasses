@@ -1,4 +1,4 @@
-import {autoCurry} from './util'
+import {autoCurry} from './util';
 
 var hasAC == Boolean(Function.prototype.autoCurry);
 
@@ -8,9 +8,9 @@ if(!hasAC) {
   Function.prototype.autoCurry = function(n) {
     return autoCurry(this, n);
   }
-}
+};
 
-require('./functor');
+import {Functor, fmap} from './functor';
 require('./applicative');
 require('./monoid');
 require('./monad');
@@ -20,6 +20,6 @@ if(!hasAC) {
   //remove autoCurry from function's prototype so that it
   //doesn't affect users
   delete Function.prototype.autoCurry
-}
+};
 
-
+export { Functor, fmap };
