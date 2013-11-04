@@ -1,6 +1,6 @@
 import {autoCurry} from './util';
 
-var hasAC == Boolean(Function.prototype.autoCurry);
+var hasAC = Boolean(Function.prototype.autoCurry);
 
 if(!hasAC) {
   //the rest of the lib wants autoCurry on Function's prototype
@@ -11,15 +11,18 @@ if(!hasAC) {
 };
 
 import {Functor, fmap} from './functor';
-require('./applicative');
-require('./monoid');
-require('./monad');
-require('./promise');
+import {Applicative, ap, pure, liftA2, liftA3} from './applicative';
+//require('./monoid');
+//require('./monad');
+//require('./promise');
 
 if(!hasAC) {
   //remove autoCurry from function's prototype so that it
   //doesn't affect users
-  delete Function.prototype.autoCurry
+  delete Function.prototype.autoCurry;
 };
 
-export { Functor, fmap };
+export {
+  Functor, fmap,
+  Applicative, ap, pure, liftA2, liftA3
+};
