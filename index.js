@@ -12,9 +12,8 @@ if(!hasAC) {
 
 import {Functor, fmap} from './functor';
 import {Applicative, ap, pure, liftA2, liftA3} from './applicative';
-//require('./monoid');
+import {Monoid, mappend, mconcat} from './monoid';
 import {Monad, mjoin, mbind, mcompose, liftM, State} from './monad';
-//require('./promise');
 
 if(!hasAC) {
   //remove autoCurry from function's prototype so that it
@@ -25,5 +24,6 @@ if(!hasAC) {
 export {
   Functor, fmap,
   Applicative, ap, pure, liftA2, liftA3,
+  Monoid, mappend, mconcat,
   Monad, mjoin, mbind, mcompose, liftM, State
 };

@@ -11,6 +11,10 @@ describe('classes', function() {
     expect(tc.Applicative).to.be.a('function');
   });
 
+  it('has Monoids', function() {
+    expect(tc.Monoid).to.be.a('function');
+  });
+
   it('has Monads', function() {
     expect(tc.Monad).to.be.a('function');
   });
