@@ -1,3 +1,4 @@
+import {K} from './util'
 import {fmap} from './functor';
 
 export var Applicative = function(type, defs) {
