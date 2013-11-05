@@ -2,9 +2,10 @@
   "name": "typeclasses",
   "version": "0.0.1",
   "description": "",
-  "main": "cjs/index.js",
+  "main": "cjs/typeclasses.js",
   "scripts": {
     "build-amd": "compile-modules *.js --to tmp/. --type amd --anonymous && r.js -o amd/build.js",
+    "build-cjs": "compile-modules *.js --to cjs/. --type cjs",
     "test": "mocha"
   },
   "repository": {
