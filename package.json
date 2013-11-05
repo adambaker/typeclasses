@@ -4,6 +4,7 @@
   "description": "",
   "main": "cjs/index.js",
   "scripts": {
+    "build-amd": "compile-modules *.js --to tmp/. --type amd --anonymous && r.js -o amd/build.js",
     "test": "mocha"
   },
   "repository": {

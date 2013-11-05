@@ -49,5 +49,10 @@ export var autoCurry = function (fn, numArgs) {
   return f;
 };
 
+Function.prototype.autoCurry = function(n) {
+  return autoCurry(this, n);
+}
+
+
 export var K = function(x){return function(){return x;};};
 export var I = function(x){return x;};
