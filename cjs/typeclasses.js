@@ -1,0 +1,36 @@
+"use strict";
+var autoCurry = require("./util").autoCurry;
+
+var Functor = require("./functor").Functor;
+var fmap = require("./functor").fmap;
+var Applicative = require("./applicative").Applicative;
+var ap = require("./applicative").ap;
+var pure = require("./applicative").pure;
+var liftA2 = require("./applicative").liftA2;
+var liftA3 = require("./applicative").liftA3;
+var Monoid = require("./monoid").Monoid;
+var mappend = require("./monoid").mappend;
+var mconcat = require("./monoid").mconcat;
+var Monad = require("./monad").Monad;
+var mjoin = require("./monad").mjoin;
+var mbind = require("./monad").mbind;
+var mcompose = require("./monad").mcompose;
+var liftM = require("./monad").liftM;
+var State = require("./monad").State;
+
+exports.Functor = Functor;
+exports.fmap = fmap;
+exports.Applicative = Applicative;
+exports.ap = ap;
+exports.pure = pure;
+exports.liftA2 = liftA2;
+exports.liftA3 = liftA3;
+exports.Monoid = Monoid;
+exports.mappend = mappend;
+exports.mconcat = mconcat;
+exports.Monad = Monad;
+exports.mjoin = mjoin;
+exports.mbind = mbind;
+exports.mcompose = mcompose;
+exports.liftM = liftM;
+exports.State = State;
