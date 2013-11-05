@@ -13,7 +13,7 @@ if(!hasAC) {
 import {Functor, fmap} from './functor';
 import {Applicative, ap, pure, liftA2, liftA3} from './applicative';
 //require('./monoid');
-//require('./monad');
+import {Monad, mjoin, mbind, mcompose, liftM, State} from './monad';
 //require('./promise');
 
 if(!hasAC) {
@@ -24,5 +24,6 @@ if(!hasAC) {
 
 export {
   Functor, fmap,
-  Applicative, ap, pure, liftA2, liftA3
+  Applicative, ap, pure, liftA2, liftA3,
+  Monad, mjoin, mbind, mcompose, liftM, State
 };
